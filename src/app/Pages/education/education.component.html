@@ -1,0 +1,21 @@
+<!-- education container for details of collages & school. -->
+<div class="educational-wrapper container text-center">
+  <ul class="list-group">
+    <li class="list-group-item active h5" aria-current="true">EDUCATION</li>
+    <li class="list-group-item">
+      <div class="timeline">
+        <!-- loop on the event value -->
+        @for(event of events;track event){
+        <div class="timeline-date" (click)="selectEvent(event)">
+          {{ event.date }}
+        </div>
+        <div class="timeline-content">
+          <h4>{{ event.title }}</h4>
+          <h5>{{event.collageName}}</h5>
+          <p>{{ event.description }}</p>
+        </div>
+        }
+      </div>
+    </li>
+  </ul>
+</div>

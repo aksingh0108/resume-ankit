@@ -1,0 +1,12 @@
+//  css for hover show rating. 
+.tooltipMy {
+    position: absolute;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1000;
+    pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+    white-space: nowrap;
+  }
+  

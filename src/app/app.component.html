@@ -1,0 +1,62 @@
+<div id="resumeContent"> 
+
+<section id="top">
+  <app-main-header></app-main-header>
+</section>
+
+<section id="home">
+  <app-home></app-home>
+</section>
+
+<div class="container px-4 text-center">
+  <div class="row ">
+    <div class="col-md-6">
+      <section id="experience">
+        <app-experience></app-experience>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <section id="education">
+        <app-education></app-education>
+      </section>
+    </div>
+  </div>
+</div>
+
+<section id="skills">
+  <app-skills></app-skills>
+</section>
+
+<section id="project">
+  <app-project></app-project>
+</section>
+<div class="container text-center mb-3">
+  @if(showCertificate){
+  <section id="certificate" >
+    <app-certificate></app-certificate>
+  </section>
+  }
+  <button type="button" (click)="toggleSectionCertificate()" class="btn btn-outline-secondary">Toggle
+    certificate</button>
+</div>
+<div class="container text-center mb-3">
+  @if(showProject){
+  <section id="portfolio"  >
+    <app-portfolio></app-portfolio>
+  </section>
+  }
+  <button type="button" (click)="toggleProject()" class="btn btn-outline-secondary">Toggle Project</button>
+</div>
+<div class="container text-center mb-3">
+  @if(showHobbies){
+  <div class="container px-4 text-center"  >
+
+    <section id="hobbies">
+      <app-hobbies></app-hobbies>
+    </section>
+  </div>
+  }
+  <button type="button" (click)="toggleSection()" class="btn btn-outline-secondary">Toggle Hobbies</button>
+</div>
+<app-main-footer></app-main-footer>
+</div>
