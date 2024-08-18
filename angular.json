@@ -22,7 +22,9 @@
               "canvg",
               "jspdf",
               "raf",
-              "rgbcolor"
+              "rgbcolor",
+              "core-js",
+              "@babel"
             ],
             
             "outputPath": "dist/resume-ankit",
